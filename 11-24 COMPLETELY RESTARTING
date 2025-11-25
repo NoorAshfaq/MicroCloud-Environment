@@ -5,13 +5,13 @@ I currently have my main pc (using VirtualBox Ubuntu 24.04 VM) and 2 old laptops
 The first thing I always like to do whenever I log into my machines, is to do sudo apt update && sudo apt upgrade -y so I’m going to run this on all of my machines. 
 
 Now I want to install openssh on Laptop #2 and I’m going to use the commands below:
-sudo apt install -y openssh-server
-sudo systemctl enable ssh
-sudo systemctl start ssh
+- sudo apt install -y openssh-server
+- sudo systemctl enable ssh
+- sudo systemctl start ssh
 I have previously created a SSH key and copied it to Laptop #1 so I don’t have to input the password each time I SSH into it. I’m going to do the same for Laptop #2. This can be done by using the following command:
-ssh-copy-id noor@10.0.0.167
- As of now, I can ssh into both of my old laptops from my main pc to avoid having to use them directly. 
+- ssh-copy-id noor@10.0.0.167
+As of now, I can ssh into both of my old laptops from my main pc to avoid having to use them directly. 
 
 The next step is to start on MicroCloud. As I mentioned before, my setup consists of my main pc and 2 old laptops. I want each laptop to be one node and my main pc to have an LXD VM of a node as well. 
 
-Last thing for today, I created a repo on GitHub that I will update with my progress and so I have a public version for my resume.
+Last thing for today, I created a repo on GitHub that I will update with my progress so I have a public version for my resume.
